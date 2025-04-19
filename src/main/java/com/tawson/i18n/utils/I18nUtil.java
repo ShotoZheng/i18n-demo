@@ -58,7 +58,7 @@ public class I18nUtil {
             locale = Locale.US;
         } else {
             try {
-                var split = lang.split(I18nConstants.SEPARATOR);
+                String[] split = lang.split(I18nConstants.SEPARATOR);
                 locale = new Locale(split[0], split[1]);
             } catch (Exception e) {
                 locale = Locale.US;
